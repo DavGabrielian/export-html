@@ -4,14 +4,14 @@ import EmailPreview from './EmailPreview';
 import PagePreview from './PagePreview';
 import "./preview.scss";
 
-const Preview = ({selectValue}) => {
+const Preview = ({selectValue, selectedTemp}) => {
 
     return (
-     <>
+     <>    
         {
             selectValue === 'email' ? 
-            <EmailPreview/> : selectValue === 'page' ?
-            <PagePreview/> : null
+            <EmailPreview selectedTemp={selectedTemp}/> : selectValue === 'page' ?
+            <PagePreview selectedTemp={selectedTemp}/> : null
         }
     </>
     );
@@ -19,7 +19,8 @@ const Preview = ({selectValue}) => {
 
 
 Preview.propTypes = {
-
+    selectValue: PropTypes.string,
+    selectedTemp: PropTypes.string
 };
 
 

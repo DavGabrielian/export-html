@@ -6,13 +6,14 @@ import Template from "./Components/Template/Template";
 
 const App = () => {
   const [selectValue, setSelectValue] = useState("");
+  const [selectedTemp, setSelectedTemp] = useState("");
 
   return (
     <div className="app">
       <Select setSelectValue={setSelectValue} />
 
-      <Template selectValue={selectValue} />
-      <Preview selectValue={selectValue} />
+      <Template selectValue={selectValue} setSelectedTemp={setSelectedTemp} />
+      <Preview selectValue={selectValue} selectedTemp={selectedTemp} />
     </div>
   );
 };

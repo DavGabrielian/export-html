@@ -19,7 +19,7 @@ const Select = ({setSelectValue}) => {
 
 
 Select.propTypes = {
-
+    setSelectValue: PropTypes.func
 };
 
 
