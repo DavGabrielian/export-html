@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.scss";
+import Preview from "./Components/Preview/Preview";
+import Select from "./Components/Select/Select";
+import Template from "./Components/Template/Template";
 
-function App() {
+const App = () => {
+  const [selectValue, setSelectValue] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Select setSelectValue={setSelectValue} />
+
+      <Template selectValue={selectValue} />
+      <Preview />
     </div>
   );
-}
+};
 
 export default App;
