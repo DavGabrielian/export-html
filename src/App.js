@@ -12,7 +12,7 @@ const App = () => {
       <Select setSelectValue={setSelectValue} />
 
       <Template selectValue={selectValue} />
-      <Preview />
+      <Preview selectValue={selectValue} />
     </div>
   );
 };

@@ -1,20 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import "./preview.scss";
+import EmailPreview from './EmailPreview';
+import PagePreview from './PagePreview';
+import "./preview.scss";
 
-const Preview = () => {
+const Preview = ({selectValue}) => {
 
     return (
-        <div>
-            <div>
-                <h1>Preview</h1>
-            </div>
-            <button>
-                <a>
-                    Export as HTML
-                </a>
-            </button>
-        </div>
+     <>
+        {
+            selectValue === 'email' ? 
+            <EmailPreview/> : selectValue === 'page' ?
+            <PagePreview/> : null
+        }
+    </>
     );
 };
 
