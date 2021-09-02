@@ -6,7 +6,7 @@ const Select = ({setSelectValue}) => {
 
     return (
         <div className="select-block">
-            <h4>Select Template</h4>
+            <h4>SELECT TEMPLATE</h4>
 
             <select name="temp" id="temp" onChange={ e => setSelectValue(e.target.value)}>
                 <option value="" disabled selected hidden>Select your option</option>

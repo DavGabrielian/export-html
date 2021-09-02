@@ -4,6 +4,252 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Template</title>
+    <style>
+      h1 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+h4 {
+  color: #8f9293;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+p {
+  max-width: 405px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+span {
+  color: #969899;
+  font-size: 13px;
+}
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  width: 184px;
+  height: 35px;
+  font-size: 15px;
+  color: #f16885;
+  border: 1px #f16885 solid;
+  background-color: transparent;
+  border-radius: 50px;
+
+}
+button > a {
+    color: #f16885;
+  }
+
+      .left-layout .page-container {
+	 padding: 0 150px;
+	 margin: 60px 0;
+}
+ .left-layout .page-container .page-block-header {
+	 display: flex;
+	 flex-direction: column;
+}
+ .left-layout .page-container .page-block-header h1 {
+	 margin-top: 10px;
+	 margin-bottom: 20px;
+}
+ .left-layout .page-container .page-block-header div {
+	 display: flex;
+}
+ .left-layout .page-container .page-block-header div span {
+	 display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+	 margin-right: 50px;
+}
+ .left-layout .page-container .page-block-header div span img {
+	 margin-right: 5px;
+}
+ .left-layout .page-container .page-block-content {
+	 margin-top: 20px;
+	 margin-bottom: 10px;
+}
+ .left-layout .page-container .page-block-footer {
+	 display: flex;
+	 align-items: center;
+}
+ .left-layout .page-container .page-block-footer span {
+	 margin-right: 22px;
+}
+ .left-layout .page-container .page-block-footer div {
+	 display: flex;
+	 justify-content: space-between;
+	 min-width: 100px;
+}
+ .center-layout .page-container {
+	 padding: 0 85px;
+	 margin: 60px 0;
+	 width: 55%;
+}
+ .center-layout .page-container .page-block-header {
+	 margin-bottom: 20px;
+}
+ .center-layout .page-container .page-block-container {
+	 display: flex;
+	 width: 100%;
+}
+ .center-layout .page-container .page-block-container .page-block-footer {
+	 width: 30%;
+	 height: 24px;
+	 display: flex;
+	 align-items: center;
+}
+ .center-layout .page-container .page-block-container .page-block-footer span {
+	 margin-right: 22px;
+}
+ .center-layout .page-container .page-block-container .page-block-footer div {
+	 display: flex;
+	 justify-content: space-between;
+	 min-width: 100px;
+}
+ .center-layout .page-container .page-block-container .page-block-content {
+	 width: 70%;
+	 margin-left: 20px;
+}
+ .center-layout .page-container .page-block-container .page-block-content h1 {
+	 margin-top: 5px;
+}
+ .center-layout .page-container .page-block-container .page-block-content div {
+	 display: flex;
+	 margin: 15px 0;
+}
+ .center-layout .page-container .page-block-container .page-block-content div span {
+	 display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+	 margin-right: 50px;
+}
+ .center-layout .page-container .page-block-container .page-block-content div span img {
+	 margin-right: 5px;
+}
+ .center-layout .page-container .page-block-container .page-block-content > img {
+	 margin-top: 20px;
+	 margin-bottom: 5px;
+}
+ .right-layout .page-container {
+	 display: flex;
+	 width: 100%;
+	 margin: 80px 0;
+	 width: 75%;
+}
+ .right-layout .page-container .page-block-header {
+	 display: flex;
+	 width: 55%;
+}
+ .right-layout .page-container .page-block-header .img-collection {
+	 width: 10%;
+	 margin-right: 10px;
+}
+ .right-layout .page-container .page-block-header .img-collection img {
+	 margin-bottom: 10px;
+}
+ .right-layout .page-container .page-block-header .img-big {
+	 width: 90%;
+}
+ .right-layout .page-container .page-block-content {
+	 width: 45%;
+}
+ .right-layout .page-container .page-block-content .buttons-wrapper {
+	 display: flex;
+	 justify-content: space-between;
+	 margin: 20px 0;
+}
+ .right-layout .page-container .page-block-content .buttons-wrapper button {
+	 width: 155px;
+	 background-color: #ec244f;
+	 color: #fff;
+}
+ .right-layout .page-container .page-block-content ul li {
+	 position: relative;
+	 line-height: 25px;
+	 padding: 0 0 0 20px;
+}
+ .right-layout .page-container .page-block-content ul li::before {
+	 content: "";
+	 position: absolute;
+	 left: 0;
+	 top: 10px;
+	 width: 6px;
+	 height: 6px;
+	 background-color: #ec244f;
+	 border-radius: 50%;
+}
+ .btn-wrapper {
+	 display: flex;
+	 padding: 0 150px;
+}
+ .btn-wrapper button {
+	 margin-left: auto;
+}
+ 
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="center-layout">
+      <div class="page-container">
+       <div class="page-block-header">
+       <img
+           src="/SVG/page-layout-2-content-palcaeholder.svg"
+           width="550"
+           height="350"
+           alt="circle-icon"
+         />
+       </div>
+
+       <div class="page-block-container">
+       <div class="page-block-footer">
+         <span>Share</span>
+         <div>
+           <img src="/SVG/facebook-icon.svg" width="24" height="24" alt="icon"/>
+           <img src="/SVG/twitter-icon.svg" width="24" height="24" alt="icon"/>
+           <img src="/SVG/instagram-icon.svg" width="24" height="24" alt="icon"/>
+         </div> 
+       </div>
+       <div class="page-block-content">
+       <h1>Title</h1>
+       <div>
+         <span><img
+           src="/SVG/date-icon.svg"
+           width="13"
+           height="13"
+           alt="circle-icon"
+         />22/12/2019</span>
+       </div> 
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+           aliquip ex ea commodo consequat.
+         </p>
+       <img
+           src="/SVG/page-layout-2-content-palcaeholder-2.svg"
+           width="380"
+           height="330"
+           alt="circle-icon"
+         />
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+           aliquip ex ea commodo consequat.
+         </p>
+       </div>
+    </div>
+     </div>
+   </div>
+  </body>
 </html>
