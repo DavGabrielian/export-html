@@ -1,173 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Email Template</title>
     <style>
-h1 {
-  font-size: 16px;
-}
+        h1 {
+            font-size: 16px;
+        }
 
-h3 {
-  font-size: 13px;
-  font-weight: 400;
-}
+        h3 {
+            font-size: 13px;
+            font-weight: 400;
+        }
 
-h4 {
-  color: #8f9293;
-  font-size: 11px;
-  margin-bottom: 8px;
-}
+        h4 {
+            color: #8f9293;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
 
-p {
-  max-width: 405px;
-  font-size: 15px;
-  line-height: 24px;
-}
+        p {
+            max-width: 405px;
+            font-size: 15px;
+            line-height: 24px;
+        }
 
-span {
-  color: #969899;
-  font-size: 13px;
-}
+        span {
+            color: #969899;
+            font-size: 13px;
+        }
 
-ul, li, a {
-  text-decoration: none;
-  list-style: none;
-}
+        ul, li, a {
+            text-decoration: none;
+            list-style: none;
+        }
 
-button {
-  width: 184px;
-  height: 35px;
-  font-size: 15px;
-  color: #f16885;
-  border: 1px #f16885 solid;
-  background-color: transparent;
-  border-radius: 50px;
+        button {
+            width: 184px;
+            height: 35px;
+            font-size: 15px;
+            color: #f16885;
+            border: 1px #f16885 solid;
+            background-color: transparent;
+            border-radius: 50px;
 
-}
-button > a {
-    color: #f16885;
-  }
+        }
 
-      .left-layout,
-      .right-layout {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .left-layout .email-container,
-      .right-layout .email-container {
-        display: flex;
-        margin: 80px 0;
-      }
-      .left-layout .email-block,
-      .right-layout .email-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 219px;
-      }
-      .left-layout .email-block:first-child,
-      .right-layout .email-block:first-child {
-        margin: 0 40px 40px;
-      }
-      .left-layout .email-block h3,
-      .right-layout .email-block h3 {
-        margin-top: 13px;
-      }
-      .left-layout .email-block:first-child > div,
-      .right-layout .email-block:first-child > div {
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .right-layout .email-container {
-        flex-direction: row-reverse;
-      }
-      .center-layout {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .center-layout .email-container {
-        margin: 80px 0;
-      }
-      .center-layout .email-container .email-block h1,
-      .center-layout .email-container .email-block h3 {
-        margin-top: 13px;
-      }
-      .center-layout .email-container .email-block:first-child {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .center-layout .email-container .email-block:last-child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 25px;
-      }
-      .center-layout .email-container .email-block .icons-block {
-        display: flex;
-        justify-content: space-between;
-        min-width: 115px;
-        margin-left: 56px;
-      }
+        button > a {
+            color: #f16885;
+        }
+
+        .left-layout,
+        .right-layout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-layout .email-container,
+        .right-layout .email-container {
+            display: flex;
+            margin: 80px 0;
+        }
+
+        .left-layout .email-block,
+        .right-layout .email-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 219px;
+        }
+
+        .left-layout .email-block:first-child,
+        .right-layout .email-block:first-child {
+            margin: 0 40px 40px;
+        }
+
+        .left-layout .email-block h3,
+        .right-layout .email-block h3 {
+            margin-top: 13px;
+        }
+
+        .left-layout .email-block:first-child > div,
+        .right-layout .email-block:first-child > div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .right-layout .email-container {
+            flex-direction: row-reverse;
+        }
+
+        .center-layout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center-layout .email-container {
+            margin: 80px 0;
+        }
+
+        .center-layout .email-container .email-block h1,
+        .center-layout .email-container .email-block h3 {
+            margin-top: 13px;
+        }
+
+        .center-layout .email-container .email-block:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .center-layout .email-container .email-block:last-child {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .center-layout .email-container .email-block .icons-block {
+            display: flex;
+            justify-content: space-between;
+            min-width: 115px;
+            margin-left: 56px;
+        }
     </style>
-  </head>
-  <body>
-    <div class="right-layout">
-      <div class="email-container">
+</head>
+<body>
+<div class="right-layout">
+    <div class="email-container">
         <div class="email-block">
-          <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
-            <g id="Image-Placeholder" transform="translate(0.475 -0.167)">
-              <g id="Mask" transform="translate(-0.475 0.167)">
-                <circle id="Ellipse_598" data-name="Ellipse 598" cx="80" cy="80" r="80" fill="#f2f5f8"/>
-              </g>
-              <g id="Group-24" transform="translate(35.581 43.796)">
-                <g id="Group_1012" data-name="Group 1012" transform="translate(-3.715 0.653)">
-                  <path id="Path" d="M147.94,69.462a6.64,6.64,0,0,0-7.4,1.774l-26.8,31.281a2.243,2.243,0,0,1-2.7.537L97.868,88.314a6.626,6.626,0,0,0-5.057-1.33,6.509,6.509,0,0,0-4.353,2.589l-15.037,17.84a6.7,6.7,0,0,0-.735,7.081,6.635,6.635,0,0,0,6.006,3.771h66.824a6.709,6.709,0,0,0,6.683-6.718V75.724a6.672,6.672,0,0,0-4.259-6.262" transform="translate(-63.34 -54.971)" fill="#cbd6e2" fill-rule="evenodd"/>
-                  <path id="Path_2364" data-name="Path 2364" d="M79.447,74.894A7.447,7.447,0,1,0,72,67.447a7.445,7.445,0,0,0,7.447,7.447" transform="translate(-63.34 -56.282)" fill="#cbd6e2" fill-rule="evenodd"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+                <g id="Image-Placeholder" transform="translate(0.475 -0.167)">
+                    <g id="Mask" transform="translate(-0.475 0.167)">
+                        <circle id="Ellipse_598" data-name="Ellipse 598" cx="80" cy="80" r="80" fill="#f2f5f8"/>
+                    </g>
+                    <g id="Group-24" transform="translate(35.581 43.796)">
+                        <g id="Group_1012" data-name="Group 1012" transform="translate(-3.715 0.653)">
+                            <path id="Path"
+                                  d="M147.94,69.462a6.64,6.64,0,0,0-7.4,1.774l-26.8,31.281a2.243,2.243,0,0,1-2.7.537L97.868,88.314a6.626,6.626,0,0,0-5.057-1.33,6.509,6.509,0,0,0-4.353,2.589l-15.037,17.84a6.7,6.7,0,0,0-.735,7.081,6.635,6.635,0,0,0,6.006,3.771h66.824a6.709,6.709,0,0,0,6.683-6.718V75.724a6.672,6.672,0,0,0-4.259-6.262"
+                                  transform="translate(-63.34 -54.971)" fill="#cbd6e2" fill-rule="evenodd"/>
+                            <path id="Path_2364" data-name="Path 2364"
+                                  d="M79.447,74.894A7.447,7.447,0,1,0,72,67.447a7.445,7.445,0,0,0,7.447,7.447"
+                                  transform="translate(-63.34 -56.282)" fill="#cbd6e2" fill-rule="evenodd"/>
+                        </g>
+                    </g>
                 </g>
-              </g>
-            </g>
-          </svg>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
-              <path d="M228,14A14,14,0,1,1,214,0,14.005,14.005,0,0,1,228,14Z" transform="translate(-200)" fill="#3c5a9b"/>
-              <path d="M256.843,31.368h1.979V28.4h-2.8a3.7,3.7,0,0,0-3.733,4.069v2.352H249.6v3.061h2.688v7.989H255.5V37.883h2.669l.448-3.061H255.5v-1.96C255.5,31.853,255.984,31.368,256.843,31.368Z" transform="translate(-240.341 -23.099)" fill="#fff"/>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
-              <circle cx="14" cy="14" r="14" fill="#1ab2e8"/>
-              <path d="M849.362,447.237A8.169,8.169,0,0,1,836.8,454.5a5.732,5.732,0,0,0,4.256-1.195,2.9,2.9,0,0,1-2.688-2,2.706,2.706,0,0,0,1.288-.056,2.872,2.872,0,0,1-2.3-2.856,2.784,2.784,0,0,0,1.306.355,2.866,2.866,0,0,1-.9-3.827,8.2,8.2,0,0,0,5.917,3.005,2.868,2.868,0,0,1,4.891-2.613,6.179,6.179,0,0,0,1.829-.691,2.9,2.9,0,0,1-1.269,1.587,5.933,5.933,0,0,0,1.643-.448A5.907,5.907,0,0,1,849.362,447.237Z" transform="translate(-829.762 -436.13)" fill="#fff"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
-              <path d="M28,214a14,14,0,1,1-14-14A14.005,14.005,0,0,1,28,214Z" transform="translate(0 -200)" fill="#2d2d37"/>
-              <g transform="translate(6.533 6.533)">
-                <g>
-                  <path d="M58.164,254.3a3.864,3.864,0,1,0,3.864,3.864A3.872,3.872,0,0,0,58.164,254.3Zm0,6.365a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,58.164,260.665Z" transform="translate(-50.697 -250.697)" fill="#fff"/>
-                  <path d="M92.4,248.9a.9.9,0,1,0,.9.9A.9.9,0,0,0,92.4,248.9Z" transform="translate(-80.953 -246.305)" fill="#fff"/>
-                  <path d="M45.677,235H39.256A4.254,4.254,0,0,0,35,239.256v6.4a4.254,4.254,0,0,0,4.256,4.256h6.4a4.266,4.266,0,0,0,4.256-4.256v-6.4A4.238,4.238,0,0,0,45.677,235Zm2.893,10.677a2.9,2.9,0,0,1-2.893,2.893H39.256a2.9,2.9,0,0,1-2.893-2.893v-6.4a2.9,2.9,0,0,1,2.893-2.893h6.4a2.9,2.9,0,0,1,2.893,2.893v6.4Z" transform="translate(-35 -235)" fill="#fff"/>
-                </g>
-              </g>
-            </svg>
-          </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
+                    <path d="M228,14A14,14,0,1,1,214,0,14.005,14.005,0,0,1,228,14Z" transform="translate(-200)"
+                          fill="#3c5a9b"/>
+                    <path d="M256.843,31.368h1.979V28.4h-2.8a3.7,3.7,0,0,0-3.733,4.069v2.352H249.6v3.061h2.688v7.989H255.5V37.883h2.669l.448-3.061H255.5v-1.96C255.5,31.853,255.984,31.368,256.843,31.368Z"
+                          transform="translate(-240.341 -23.099)" fill="#fff"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
+                    <circle cx="14" cy="14" r="14" fill="#1ab2e8"/>
+                    <path d="M849.362,447.237A8.169,8.169,0,0,1,836.8,454.5a5.732,5.732,0,0,0,4.256-1.195,2.9,2.9,0,0,1-2.688-2,2.706,2.706,0,0,0,1.288-.056,2.872,2.872,0,0,1-2.3-2.856,2.784,2.784,0,0,0,1.306.355,2.866,2.866,0,0,1-.9-3.827,8.2,8.2,0,0,0,5.917,3.005,2.868,2.868,0,0,1,4.891-2.613,6.179,6.179,0,0,0,1.829-.691,2.9,2.9,0,0,1-1.269,1.587,5.933,5.933,0,0,0,1.643-.448A5.907,5.907,0,0,1,849.362,447.237Z"
+                          transform="translate(-829.762 -436.13)" fill="#fff"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="26" height="26">
+                    <path d="M28,214a14,14,0,1,1-14-14A14.005,14.005,0,0,1,28,214Z" transform="translate(0 -200)"
+                          fill="#2d2d37"/>
+                    <g transform="translate(6.533 6.533)">
+                        <g>
+                            <path d="M58.164,254.3a3.864,3.864,0,1,0,3.864,3.864A3.872,3.872,0,0,0,58.164,254.3Zm0,6.365a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,58.164,260.665Z"
+                                  transform="translate(-50.697 -250.697)" fill="#fff"/>
+                            <path d="M92.4,248.9a.9.9,0,1,0,.9.9A.9.9,0,0,0,92.4,248.9Z"
+                                  transform="translate(-80.953 -246.305)" fill="#fff"/>
+                            <path d="M45.677,235H39.256A4.254,4.254,0,0,0,35,239.256v6.4a4.254,4.254,0,0,0,4.256,4.256h6.4a4.266,4.266,0,0,0,4.256-4.256v-6.4A4.238,4.238,0,0,0,45.677,235Zm2.893,10.677a2.9,2.9,0,0,1-2.893,2.893H39.256a2.9,2.9,0,0,1-2.893-2.893v-6.4a2.9,2.9,0,0,1,2.893-2.893h6.4a2.9,2.9,0,0,1,2.893,2.893v6.4Z"
+                                  transform="translate(-35 -235)" fill="#fff"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
         </div>
 
         <div class="email-block">
-          <div>
-            <h1>Name Surname</h1>
-            <h3>Web Developer</h3>
-          </div>
+            <div>
+                <h1>Name Surname</h1>
+                <h3>Web Developer</h3>
+            </div>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
         </div>
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>

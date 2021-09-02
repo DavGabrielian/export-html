@@ -7,13 +7,13 @@ import "./preview.scss";
 const Preview = ({selectValue, selectedTemp}) => {
 
     return (
-     <>    
-        {
-            selectValue === 'email' ? 
-            <EmailPreview selectedTemp={selectedTemp}/> : selectValue === 'page' ?
-            <PagePreview selectedTemp={selectedTemp}/> : null
-        }
-    </>
+        <>
+            {
+                selectValue === 'email' ?
+                    <EmailPreview selectedTemp={selectedTemp}/> : selectValue === 'page' ?
+                        <PagePreview selectedTemp={selectedTemp}/> : null
+            }
+        </>
     );
 };
 

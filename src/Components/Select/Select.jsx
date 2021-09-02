@@ -8,7 +8,7 @@ const Select = ({setSelectValue}) => {
         <div className="select-block">
             <h4>SELECT TEMPLATE</h4>
 
-            <select name="temp" id="temp" onChange={ e => setSelectValue(e.target.value)}>
+            <select name="temp" id="temp" onChange={e => setSelectValue(e.target.value)}>
                 <option value="" disabled selected hidden>Select your option</option>
                 <option value="email">Email signature layout</option>
                 <option value="page">Page layout</option>

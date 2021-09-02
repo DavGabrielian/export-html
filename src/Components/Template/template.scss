@@ -4,11 +4,14 @@
 
 .temp-block {
   display: flex;
+
   input {
     display: none;
   }
+
   .temp-items {
     display: flex;
+
     div {
       display: flex;
       flex-direction: column;
@@ -30,6 +33,7 @@
     width: 220px;
     height: 200px;
     border-radius: 10px;
+
     &:hover {
       cursor: pointer;
     }
@@ -38,6 +42,7 @@
   .radio:checked + .label {
     /* target next sibling (+) label */
     border: 1px #f491a7 solid;
+
     span {
       color: #f491a7;
     }
